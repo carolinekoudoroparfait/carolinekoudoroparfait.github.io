@@ -121,7 +121,9 @@ li:hover .row_hide {
 .column {
   flex: 100%;
   max-width: 100%;
-  padding: 0 4px;
+ padding: 0 4px;
+ 
+
 }
 
 #HumaNum {
@@ -130,6 +132,9 @@ li:hover .row_hide {
 
 .text{
 	opacity: 1;
+	text-align: justify;
+	margin-left: 100px;
+	margin-right: 200px;
 }
 
 footer {

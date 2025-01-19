@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3a1945e5-66e4-40c3-aaa0-21b45c3aec37" name="Changes" comment="Portfolio_index">
       <change beforePath="$PROJECT_DIR$/Portfolio_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio_index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/VisualPractice.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/VisualPractice.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +76,7 @@
       <updated>1645134089736</updated>
       <workItem from="1736527900591" duration="1617000" />
       <workItem from="1737132312878" duration="13438000" />
-      <workItem from="1737306406694" duration="10827000" />
+      <workItem from="1737306406694" duration="11362000" />
     </task>
     <task id="LOCAL-00001" summary="adresse">
       <option name="closed" value="true" />

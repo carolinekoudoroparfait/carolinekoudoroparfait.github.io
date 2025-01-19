@@ -2,6 +2,7 @@
   position: relative;
   max-width: 800px; /* Maximum width */
   margin: 0 auto; /* Center it */
+  text-align: center;
 }
 
 .container .content {
@@ -16,6 +17,10 @@
 
 .gallery {
     display: grid;
-    /*grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
-    /*gap: 20px;*/
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.container img {
+    width: 100%;
 }

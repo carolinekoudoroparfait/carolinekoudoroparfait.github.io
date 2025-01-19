@@ -9,7 +9,7 @@
   position: absolute; /* Position the background text */
   bottom: 0; /* At the bottom. Use top:0 to append it to the top */
   background: rgb(0, 0, 0); /* Fallback color */
-  background: rgba(0, 0, 0, 0); /* Black background with 0.5 opacity */
+  background: rgba(0, 0, 0, 0.25); /* Black background with 0.5 opacity */
   color: #f1f1f1; /* Grey text */
   width: 100%; /* Full width */
   padding: 20px; /* Some padding */
@@ -18,7 +18,7 @@
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    /*gap: 20px;*/
 }
 
 .container img {

@@ -302,46 +302,74 @@ Her interests lie in user-centered design, with a particular focus on developing
         <script>
 
           function loadTableCourses(){
+          var courses = [
+    ["Nom de la matière", "Statut", "Années", "Étab.", "Niveau", "heTDs", "Nature", "Resp."],
+    ["L6SOPRG - Programmation Python S6", "ATER", "24/25", "SU", "L3", 27, "CM", "✅"],
+    ["L6SOPRG - Programmation Python S6", "ATER", "24/25", "SU", "L3", 18, "TD", "✅"],
+    ["M4LFHUNU - Humanités Numériques", "ATER", "24/25", "SU", "M2", 3, "CM", "✅"],
+    ["M2SOL023 - Analyse Lexicale en TAL", "ATER", "24/25", "SU", "M1", 3, "TD", "🔵"],
+    ["PIX - Programmer et résoudre des problèmes techniques", "ATER", "24/25", "SU", "L2", 4.5, "CM", "🟠"],
+    ["PIX - Développer des compétences numériques", "ATER", "24/25", "SU", "L2", 36, "TD", "❌"],
+    ["L5SOPRG - Programmation Python S5", "ATER", "24/25", "SU", "L3", 39, "CM", "✅, 🔵, 🟠"],
+    ["L5SOPRG - Programmation Python S5", "ATER", "24/25", "SU", "L3", 26, "TD", "✅, 🟠"],
+    ["PIX - Construire un environnement numérique", "ATER", "24/25", "SU", "L2", 3, "CM", "🟠"],
+    ["PIX - Développer des compétences numériques", "ATER", "24/25", "SU", "L2", 36, "TD", "❌"],
+    ["L6SOPRG - Programmation Python S6", "ATER", "23/24", "SU", "L3", 27, "CM", "✅"],
+    ["L6SOPRG - Programmation Python S6", "ATER", "23/24", "SU", "L3", 18, "TD", "✅"],
+    ["M4LFHUNU - Humanités Numériques", "ATER", "23/24", "SU", "M2", 3, "CM", "✅"],
+    ["M2SOL023 - Analyse Lexicale en TAL", "ATER", "23/24", "SU", "M1", 3, "TD", "🔵"],
+    ["L4SOINGE - Linguistique Informatique", "ATER", "23/24", "SU", "L2", 4.5, "TD", "❌"],
+    ["PIX - Programmer et résoudre des problèmes techniques", "ATER", "23/24", "SU", "L2", 4.5, "CM", "🟠"],
+    ["PIX - Développer des compétences numériques", "ATER", "23/24", "SU", "L2", 36, "TD", "❌"],
+    ["L5SOPRG - Programmation Python S5", "ATER", "23/24", "SU", "L3", 33, "CM", "✅, 🔵, 🟠"],
+    ["L5SOPRG - Programmation Python S5", "ATER", "23/24", "SU", "L3", 22, "TD", "✅, 🟠"],
+    ["PIX - Construire un environnement numérique", "ATER", "23/24", "SU", "L3", 3, "CM", "🟠"],
+    ["PIX - Développer des compétences numériques", "ATER", "23/24", "SU", "L3", 36, "TD", "❌"],
+    ["Algorithmique et structuration des données", "Vacataire", "22/23", "INALCO", "L3", 37.5, "CM", "✅, 🔵"],
+    ["Programmation Python", "Vacataire", "22/23", "INALCO", "L3", 50, "TD", "✅"],
+    ["Algorithmique et structuration des données", "Vacataire", "21/22", "INALCO", "L3", 37.5, "CM", "✅, 🔵"],
+    ["Programmation Python", "Vacataire", "21/22", "INALCO", "L3", 50, "TD", "✅"],
+    ["Total", "", "", "", "", 560.5, "", ""]
+];
 
-
-           var courses = [
-            ["Projet Tutoré" , "30h","L3" ,"TP " , 2017 ],
-            ["Programmation Orientée Objet (C++) " , "30h" ,"L1" ,"TD/TP " ,2020 ],
-            ["Modélisation des Processus" , "180h" ,"L2", "TD/TP " ,2017 ],
-            ["Metodologie de la Recherche" , "45h" ,"L3" ,"TD/TP " ,2017 ],
-            ["Programmation Orientée Objet (C\#)" , "90h" ,"L1"  ,"TD/TP " ,2018 ],
-            ["Base de Données pour Logiciels" , "75h" ,"L3" ,"TD/TP " ,2018 ],
-            ["Developpement d'Applications Web (PHP/HTML)" , "90h" ,"L1" ,"TD/TP " ,2018 ],
-            ["Developpement d'Applications (Java)" , "90h" ,"L1" ,"TD/TP " ,2018 ],
-            ["Metodologie de la Recherche" , "45h" ,"L3" ,"TD/TP " ,2018 ],
-            ["Programmation Orientée Objet (C++) ","30h   ","  L1   ","  TD/TP",2019  ],
-            ["Bases de Programmation (Python) ","54h   ","  L1   ","  TD/TP",2020  ],
-            ["Bases de Programmation (C++) ","54h   ","  L1   ","  TD/TP",2021  ],
-            ["Architecture Web et base de données ","24h   ","  L2   ","  TP",2021  ],
-            ["Génie Logiciel  ","27h   ","  L3   ","  TP",2021  ],
-            ["Projet - Urbanisation  ","18h   ","  M1   ","  TP",2021  ],
-            ["Programmation Parallèle (C++)","21h   ","  M1   ","  TP",2021  ],
-            ["Application d'innovation ","21h   ","  M2   ","  TD/TP",2021  ],
-            ["Analyse en ligne (OLAP) et visualisation de données","12h   ","  M1   ","  TD",2022  ],
-            ["Apprentisage Incremental ","12h   ","  M2   ","  TD",2022  ],
-            ["Supervision de projet","5h   ","  M1   ","  TDI",2021  ],
-            ["Bases de Programmation (C++) ","54h   ","  L1   ","  TD/TP",2022  ],
-            ["Développement Web : conception internet  ","12h   ","  L1   ","  TP",2022  ],
-            ["Génie Logiciel  ","27h   ","  L3   ","  TP",2022  ],
-            ["Modelisation Objet et UML","15h   ","  L3   ","  TP",2022  ],
-            ["Application d'innovation ","21h   ","  M2   ","  TD/TP",2022  ],
-            ["Analyse en ligne (OLAP) et visualisation de données ","12h   ","  M1   ","  TD",2023  ],
-            ["Projet de Programmation  ","18h   ","  L1   ","  TP",2023  ],
-            ["Architecture Web et base de données ","24h   ","  L2   ","  TP",2023  ],
-            ["Recherche d'information et site Web","56h   ","  L3   ","  TD",2023  ],
-            ["Cours PIX  ","42h   ","  L1   ","  TP",2023  ],
-            ["Cours PIX  ","3h   ","  L1   ","  CM",2023  ],
-            ["Mathematiques  ","21h   ","  L3   ","  TP",2023  ],
-            ["Cours PIX 2  ","42h   ","  L1   ","  TP",2024  ],
-            ["Statistique  ","13.5h","  L3   ","  TP",2024  ],
-            ["Algorithmes et structures","25h   ","  L3  ","  TP",2024  ],
-            ["Total d'heures"," 1602h   ","     ","  ",""      ] ,
-           ];
+           // var courses = [
+           //  ["Projet Tutoré" , "30h","L3" ,"TP " , 2017 ],
+           //  ["Programmation Orientée Objet (C++) " , "30h" ,"L1" ,"TD/TP " ,2020 ],
+           //  ["Modélisation des Processus" , "180h" ,"L2", "TD/TP " ,2017 ],
+           //  ["Metodologie de la Recherche" , "45h" ,"L3" ,"TD/TP " ,2017 ],
+           //  ["Programmation Orientée Objet (C\#)" , "90h" ,"L1"  ,"TD/TP " ,2018 ],
+           //  ["Base de Données pour Logiciels" , "75h" ,"L3" ,"TD/TP " ,2018 ],
+           //  ["Developpement d'Applications Web (PHP/HTML)" , "90h" ,"L1" ,"TD/TP " ,2018 ],
+           //  ["Developpement d'Applications (Java)" , "90h" ,"L1" ,"TD/TP " ,2018 ],
+           //  ["Metodologie de la Recherche" , "45h" ,"L3" ,"TD/TP " ,2018 ],
+           //  ["Programmation Orientée Objet (C++) ","30h   ","  L1   ","  TD/TP",2019  ],
+           //  ["Bases de Programmation (Python) ","54h   ","  L1   ","  TD/TP",2020  ],
+           //  ["Bases de Programmation (C++) ","54h   ","  L1   ","  TD/TP",2021  ],
+           //  ["Architecture Web et base de données ","24h   ","  L2   ","  TP",2021  ],
+           //  ["Génie Logiciel  ","27h   ","  L3   ","  TP",2021  ],
+           //  ["Projet - Urbanisation  ","18h   ","  M1   ","  TP",2021  ],
+           //  ["Programmation Parallèle (C++)","21h   ","  M1   ","  TP",2021  ],
+           //  ["Application d'innovation ","21h   ","  M2   ","  TD/TP",2021  ],
+           //  ["Analyse en ligne (OLAP) et visualisation de données","12h   ","  M1   ","  TD",2022  ],
+           //  ["Apprentisage Incremental ","12h   ","  M2   ","  TD",2022  ],
+           //  ["Supervision de projet","5h   ","  M1   ","  TDI",2021  ],
+           //  ["Bases de Programmation (C++) ","54h   ","  L1   ","  TD/TP",2022  ],
+           //  ["Développement Web : conception internet  ","12h   ","  L1   ","  TP",2022  ],
+           //  ["Génie Logiciel  ","27h   ","  L3   ","  TP",2022  ],
+           //  ["Modelisation Objet et UML","15h   ","  L3   ","  TP",2022  ],
+           //  ["Application d'innovation ","21h   ","  M2   ","  TD/TP",2022  ],
+           //  ["Analyse en ligne (OLAP) et visualisation de données ","12h   ","  M1   ","  TD",2023  ],
+           //  ["Projet de Programmation  ","18h   ","  L1   ","  TP",2023  ],
+           //  ["Architecture Web et base de données ","24h   ","  L2   ","  TP",2023  ],
+           //  ["Recherche d'information et site Web","56h   ","  L3   ","  TD",2023  ],
+           //  ["Cours PIX  ","42h   ","  L1   ","  TP",2023  ],
+           //  ["Cours PIX  ","3h   ","  L1   ","  CM",2023  ],
+           //  ["Mathematiques  ","21h   ","  L3   ","  TP",2023  ],
+           //  ["Cours PIX 2  ","42h   ","  L1   ","  TP",2024  ],
+           //  ["Statistique  ","13.5h","  L3   ","  TP",2024  ],
+           //  ["Algorithmes et structures","25h   ","  L3  ","  TP",2024  ],
+           //  ["Total d'heures"," 1602h   ","     ","  ",""      ] ,
+           // ];
             courses.sort(sortFunction);
 
             function sortFunction(a, b) {
@@ -391,316 +419,6 @@ Her interests lie in user-centered design, with a particular focus on developing
       </div>
     </div>
   </div>
-       
-<!--        <div class="shadow-1-strong bg-white my-5 p-5" id="teachingexperience">-->
-<!--    <div class="teachingexperience-section">-->
-<!--      <h2 class="h2 fw-light mb-4">Teaching Experience</h2>-->
-<!--      <table>-->
-<!--<thead>-->
-<!--<tr class="header">-->
-<!--<th style="text-align: left;"><strong>Nom de la matière</strong></th>-->
-<!--<th style="text-align: left;"><strong>Statut</strong></th>-->
-<!--<th style="text-align: right;"><strong>Années</strong></th>-->
-<!--<th style="text-align: left;"><strong>Étab.</strong></th>-->
-<!--<th style="text-align: left;"><strong>Niveau</strong></th>-->
-<!--<th style="text-align: left;"><strong>heTDs</strong></th>-->
-<!--<th style="text-align: left;"><strong>Nature</strong></th>-->
-<!--<th style="text-align: left;"><strong>Resp.</strong></th>-->
-<!--</tr>-->
-<!--</thead>-->
-<!--<tbody>-->
-<!--<tr class="odd">-->
-<!--<td style="text-align: left;">L6SOPRG - Programmation Python S6</td>-->
-<!--<td style="text-align: left;">ATER</td>-->
-<!--<td style="text-align: right;">24/25</td>-->
-<!--<td style="text-align: left;">SU</td>-->
-<!--<td style="text-align: left;">L3</td>-->
-<!--<td style="text-align: left;">27</td>-->
-<!--<td style="text-align: left;">CM</td>-->
-<!--<td style="text-align: left;"><span-->
-<!--style="color: MediumSpringGreen"></span></td>-->
-<!--</tr>-->
-<!--<tr class="even">-->
-<!--<td style="text-align: left;">L6SOPRG - Programmation Python S6</td>-->
-<!--<td style="text-align: left;">ATER</td>-->
-<!--<td style="text-align: right;">24/25</td>-->
-<!--<td style="text-align: left;">SU</td>-->
-<!--<td style="text-align: left;">L3</td>-->
-<!--<td style="text-align: left;">18</td>-->
-<!--<td style="text-align: left;">TD</td>-->
-<!--<td style="text-align: left;"><span-->
-<!--style="color: MediumSpringGreen"></span></td>-->
-<!--</tr>-->
-<!--<tr class="odd">-->
-<!--<td style="text-align: left;">M4LFHUNU - Humanités Numériques</td>-->
-<!--<td style="text-align: left;">ATER</td>-->
-<!--<td style="text-align: right;">24/25</td>-->
-<!--<td style="text-align: left;">SU</td>-->
-<!--<td style="text-align: left;">M2</td>-->
-<!--<td style="text-align: left;">3</td>-->
-<!--<td style="text-align: left;">CM</td>-->
-<!--<td style="text-align: left;"><span-->
-<!--style="color: MediumSpringGreen"></span></td>-->
-<!--</tr>-->
-<!--<tr class="even">-->
-<!--<td style="text-align: left;">M2SOL023 - Analyse Lexicale en TAL</td>-->
-<!--<td style="text-align: left;">ATER</td>-->
-<!--<td style="text-align: right;">24/25</td>-->
-<!--<td style="text-align: left;">SU</td>-->
-<!--<td style="text-align: left;">M1</td>-->
-<!--<td style="text-align: left;">3</td>-->
-<!--<td style="text-align: left;">TD</td>-->
-<!--<td style="text-align: left;"><span style="color: blue"></span></td>-->
-<!--</tr>-->
-<!--<tr class="odd">-->
-<!--<td style="text-align: left;">PIX - Programmer et résoudre des problèmes-->
-<!--techniques</td>-->
-<!--<td style="text-align: left;">ATER</td>-->
-<!--<td style="text-align: right;">24/25</td>-->
-<!--<td style="text-align: left;">SU</td>-->
-<!--<td style="text-align: left;">L2</td>-->
-<!--<td style="text-align: left;">4.5</td>-->
-<!--<td style="text-align: left;">CM</td>-->
-<!--<td style="text-align: left;"><span style="color: orange"></span></td>-->
-<!--</tr>-->
-<!--<tr class="even">-->
-<!--<td style="text-align: left;">PIX - Développer des compétences-->
-<!--numériques</td>-->
-<!--<td style="text-align: left;">ATER</td>-->
-<!--<td style="text-align: right;">24/25</td>-->
-<!--<td style="text-align: left;">SU</td>-->
-<!--<td style="text-align: left;">L2</td>-->
-<!--<td style="text-align: left;">36</td>-->
-<!--<td style="text-align: left;">TD</td>-->
-<!--<td style="text-align: left;"><span style="color: red"></span></td>-->
-<!--</tr>-->
-<!--<tr class="odd">-->
-<!--<td style="text-align: left;">L5SOPRG - Programmation Python S5</td>-->
-<!--<td style="text-align: left;">ATER</td>-->
-<!--<td style="text-align: right;">24/25</td>-->
-<!--<td style="text-align: left;">SU</td>-->
-<!--<td style="text-align: left;">L3</td>-->
-<!--<td style="text-align: left;">39</td>-->
-<!--<td style="text-align: left;">CM</td>-->
-<!--<td style="text-align: left;"><span-->
-<!--style="color: MediumSpringGreen"></span>, <span-->
-<!--style="color: blue"></span>, <span style="color: orange"></span></td>-->
-<!--</tr>-->
-<!--<tr class="even">-->
-<!--<td style="text-align: left;">L5SOPRG - Programmation Python S5</td>-->
-<!--<td style="text-align: left;">ATER</td>-->
-<!--<td style="text-align: right;">24/25</td>-->
-<!--<td style="text-align: left;">SU</td>-->
-<!--<td style="text-align: left;">L3</td>-->
-<!--<td style="text-align: left;">26</td>-->
-<!--<td style="text-align: left;">TD</td>-->
-<!--<td style="text-align: left;"><span-->
-<!--style="color: MediumSpringGreen"></span>, <span-->
-<!--style="color: orange"></span></td>-->
-<!--</tr>-->
-<!--<tr class="odd">-->
-<!--<td style="text-align: left;">PIX - Construire un environnement-->
-<!--numérique</td>-->
-<!--<td style="text-align: left;">ATER</td>-->
-<!--<td style="text-align: right;">24/25</td>-->
-<!--<td style="text-align: left;">SU</td>-->
-<!--<td style="text-align: left;">L2</td>-->
-<!--<td style="text-align: left;">3</td>-->
-<!--<td style="text-align: left;">CM</td>-->
-<!--<td style="text-align: left;"><span style="color: orange"></span></td>-->
-<!--</tr>-->
-<!--<tr class="even">-->
-<!--<td style="text-align: left;">PIX - Développer des compétences-->
-<!--numériques</td>-->
-<!--<td style="text-align: left;">ATER</td>-->
-<!--<td style="text-align: right;">24/25</td>-->
-<!--<td style="text-align: left;">SU</td>-->
-<!--<td style="text-align: left;">L2</td>-->
-<!--<td style="text-align: left;">36</td>-->
-<!--<td style="text-align: left;">TD</td>-->
-<!--<td style="text-align: left;"><span style="color: red"></span></td>-->
-<!--</tr>-->
-<!--<tr class="odd">-->
-<!--<td style="text-align: left;">L6SOPRG - Programmation Python S6</td>-->
-<!--<td style="text-align: left;">ATER</td>-->
-<!--<td style="text-align: right;">23/24</td>-->
-<!--<td style="text-align: left;">SU</td>-->
-<!--<td style="text-align: left;">L3</td>-->
-<!--<td style="text-align: left;">27</td>-->
-<!--<td style="text-align: left;">CM</td>-->
-<!--<td style="text-align: left;"><span-->
-<!--style="color: MediumSpringGreen"></span></td>-->
-<!--</tr>-->
-<!--<tr class="even">-->
-<!--<td style="text-align: left;">L6SOPRG - Programmation Python S6</td>-->
-<!--<td style="text-align: left;">ATER</td>-->
-<!--<td style="text-align: right;">23/24</td>-->
-<!--<td style="text-align: left;">SU</td>-->
-<!--<td style="text-align: left;">L3</td>-->
-<!--<td style="text-align: left;">18</td>-->
-<!--<td style="text-align: left;">TD</td>-->
-<!--<td style="text-align: left;"><span-->
-<!--style="color: MediumSpringGreen"></span></td>-->
-<!--</tr>-->
-<!--<tr class="odd">-->
-<!--<td style="text-align: left;">M4LFHUNU - Humanités Numériques</td>-->
-<!--<td style="text-align: left;">ATER</td>-->
-<!--<td style="text-align: right;">23/24</td>-->
-<!--<td style="text-align: left;">SU</td>-->
-<!--<td style="text-align: left;">M2</td>-->
-<!--<td style="text-align: left;">3</td>-->
-<!--<td style="text-align: left;">CM</td>-->
-<!--<td style="text-align: left;"><span-->
-<!--style="color: MediumSpringGreen"></span></td>-->
-<!--</tr>-->
-<!--<tr class="even">-->
-<!--<td style="text-align: left;">M2SOL023 - Analyse Lexicale en TAL</td>-->
-<!--<td style="text-align: left;">ATER</td>-->
-<!--<td style="text-align: right;">23/24</td>-->
-<!--<td style="text-align: left;">SU</td>-->
-<!--<td style="text-align: left;">M1</td>-->
-<!--<td style="text-align: left;">3</td>-->
-<!--<td style="text-align: left;">TD</td>-->
-<!--<td style="text-align: left;"><span style="color: blue"></span></td>-->
-<!--</tr>-->
-<!--<tr class="odd">-->
-<!--<td style="text-align: left;">L4SOINGE - Linguistique Informatique</td>-->
-<!--<td style="text-align: left;">ATER</td>-->
-<!--<td style="text-align: right;">23/24</td>-->
-<!--<td style="text-align: left;">SU</td>-->
-<!--<td style="text-align: left;">L2</td>-->
-<!--<td style="text-align: left;">4.5</td>-->
-<!--<td style="text-align: left;">TD</td>-->
-<!--<td style="text-align: left;"><span style="color: red"></span></td>-->
-<!--</tr>-->
-<!--<tr class="even">-->
-<!--<td style="text-align: left;">PIX - Programmer et résoudre des problèmes-->
-<!--techniques</td>-->
-<!--<td style="text-align: left;">ATER</td>-->
-<!--<td style="text-align: right;">23/24</td>-->
-<!--<td style="text-align: left;">SU</td>-->
-<!--<td style="text-align: left;">L2</td>-->
-<!--<td style="text-align: left;">4.5</td>-->
-<!--<td style="text-align: left;">CM</td>-->
-<!--<td style="text-align: left;"><span style="color: orange"></span></td>-->
-<!--</tr>-->
-<!--<tr class="odd">-->
-<!--<td style="text-align: left;">PIX - Développer des compétences-->
-<!--numériques</td>-->
-<!--<td style="text-align: left;">ATER</td>-->
-<!--<td style="text-align: right;">23/24</td>-->
-<!--<td style="text-align: left;">SU</td>-->
-<!--<td style="text-align: left;">L2</td>-->
-<!--<td style="text-align: left;">36</td>-->
-<!--<td style="text-align: left;">TD</td>-->
-<!--<td style="text-align: left;"><span style="color: red"></span></td>-->
-<!--</tr>-->
-<!--<tr class="even">-->
-<!--<td style="text-align: left;">L5SOPRG - Programmation Python S5</td>-->
-<!--<td style="text-align: left;">ATER</td>-->
-<!--<td style="text-align: right;">23/24</td>-->
-<!--<td style="text-align: left;">SU</td>-->
-<!--<td style="text-align: left;">L3</td>-->
-<!--<td style="text-align: left;">33</td>-->
-<!--<td style="text-align: left;">CM</td>-->
-<!--<td style="text-align: left;"><span-->
-<!--style="color: MediumSpringGreen"></span>, <span-->
-<!--style="color: blue"></span>, <span style="color: orange"></span></td>-->
-<!--</tr>-->
-<!--<tr class="odd">-->
-<!--<td style="text-align: left;">L5SOPRG - Programmation Python S5</td>-->
-<!--<td style="text-align: left;">ATER</td>-->
-<!--<td style="text-align: right;">23/24</td>-->
-<!--<td style="text-align: left;">SU</td>-->
-<!--<td style="text-align: left;">L3</td>-->
-<!--<td style="text-align: left;">22</td>-->
-<!--<td style="text-align: left;">TD</td>-->
-<!--<td style="text-align: left;"><span-->
-<!--style="color: MediumSpringGreen"></span>, <span-->
-<!--style="color: orange"></span></td>-->
-<!--</tr>-->
-<!--<tr class="even">-->
-<!--<td style="text-align: left;">PIX - Construire un environnement-->
-<!--numérique</td>-->
-<!--<td style="text-align: left;">ATER</td>-->
-<!--<td style="text-align: right;">23/24</td>-->
-<!--<td style="text-align: left;">SU</td>-->
-<!--<td style="text-align: left;">L3</td>-->
-<!--<td style="text-align: left;">3</td>-->
-<!--<td style="text-align: left;">CM</td>-->
-<!--<td style="text-align: left;"><span style="color: orange"></span></td>-->
-<!--</tr>-->
-<!--<tr class="odd">-->
-<!--<td style="text-align: left;">PIX - Développer des compétences-->
-<!--numériques</td>-->
-<!--<td style="text-align: left;">ATER</td>-->
-<!--<td style="text-align: right;">23/24</td>-->
-<!--<td style="text-align: left;">SU</td>-->
-<!--<td style="text-align: left;">L3</td>-->
-<!--<td style="text-align: left;">36</td>-->
-<!--<td style="text-align: left;">TD</td>-->
-<!--<td style="text-align: left;"><span style="color: red"></span></td>-->
-<!--</tr>-->
-<!--<tr class="even">-->
-<!--<td style="text-align: left;">Algorithmique et structuration des-->
-<!--données</td>-->
-<!--<td style="text-align: left;">Vacataire</td>-->
-<!--<td style="text-align: right;">22/23</td>-->
-<!--<td style="text-align: left;">INALCO</td>-->
-<!--<td style="text-align: left;">L3</td>-->
-<!--<td style="text-align: left;">37.5</td>-->
-<!--<td style="text-align: left;">CM</td>-->
-<!--<td style="text-align: left;"><span-->
-<!--style="color: MediumSpringGreen"></span> <span-->
-<!--style="color: blue"></span></td>-->
-<!--</tr>-->
-<!--<tr class="odd">-->
-<!--<td style="text-align: left;">Programmation Python</td>-->
-<!--<td style="text-align: left;">Vacataire</td>-->
-<!--<td style="text-align: right;">22/23</td>-->
-<!--<td style="text-align: left;">INALCO</td>-->
-<!--<td style="text-align: left;">L3</td>-->
-<!--<td style="text-align: left;">50</td>-->
-<!--<td style="text-align: left;">TD</td>-->
-<!--<td style="text-align: left;"><span-->
-<!--style="color: MediumSpringGreen"></span></td>-->
-<!--</tr>-->
-<!--<tr class="even">-->
-<!--<td style="text-align: left;">Algorithmique et structuration des-->
-<!--données</td>-->
-<!--<td style="text-align: left;">Vacataire</td>-->
-<!--<td style="text-align: right;">21/22</td>-->
-<!--<td style="text-align: left;">INALCO</td>-->
-<!--<td style="text-align: left;">L3</td>-->
-<!--<td style="text-align: left;">37.5</td>-->
-<!--<td style="text-align: left;">CM</td>-->
-<!--<td style="text-align: left;"><span-->
-<!--style="color: MediumSpringGreen"></span> <span-->
-<!--style="color: blue"></span></td>-->
-<!--</tr>-->
-<!--<tr class="odd">-->
-<!--<td style="text-align: left;">Programmation Python</td>-->
-<!--<td style="text-align: left;">Vacataire</td>-->
-<!--<td style="text-align: right;">21/22</td>-->
-<!--<td style="text-align: left;">INALCO</td>-->
-<!--<td style="text-align: left;">L3</td>-->
-<!--<td style="text-align: left;">50</td>-->
-<!--<td style="text-align: left;">TD</td>-->
-<!--<td style="text-align: left;"><span-->
-<!--style="color: MediumSpringGreen"></span></td>-->
-<!--</tr>-->
-<!--<tr class="even">-->
-<!--<td style="text-align: left;">Total</td>-->
-<!--<td style="text-align: left;"> </td>-->
-<!--<td style="text-align: right;"> </td>-->
-<!--<td style="text-align: left;"> </td>-->
-<!--<td style="text-align: left;"> </td>-->
-<!--<td style="text-align: left;">560.5</td>-->
-<!--<td style="text-align: left;"> </td>-->
-<!--<td style="text-align: left;"></td>-->
-<!--</tr>-->
-<!--</tbody>-->
-<!--</table>-->
 
   <div class="shadow-1-strong bg-white my-5 p-5 d-print-none" id="portfolio">
     <div class="portfolio-section">

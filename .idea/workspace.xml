@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a1945e5-66e4-40c3-aaa0-21b45c3aec37" name="Changes" comment="Portfolio_index">
+      <change afterPath="$PROJECT_DIR$/css/VisualPractice.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/Cabannexile.html" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/Cabannexile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/Cathedrale.html" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/Cathedrale.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/LesMaisons.html" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/LesMaisons.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/Piscine.html" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/Piscine.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Portfolio_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio_index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,6 +18,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -53,6 +51,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "last_opened_file_path": "/home/caroline/Nextcloud/carolinekoudoroparfait.github.io",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -79,7 +78,7 @@
       <updated>1645134089736</updated>
       <workItem from="1736527900591" duration="1617000" />
       <workItem from="1737132312878" duration="13438000" />
-      <workItem from="1737306406694" duration="8765000" />
+      <workItem from="1737306406694" duration="9952000" />
     </task>
     <task id="LOCAL-00001" summary="adresse">
       <option name="closed" value="true" />

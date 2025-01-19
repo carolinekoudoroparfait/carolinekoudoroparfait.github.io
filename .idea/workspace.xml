@@ -4,23 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a1945e5-66e4-40c3-aaa0-21b45c3aec37" name="Changes" comment="adresse">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_enseignements_desc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/favicon_io.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/favicon_io/about.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/favicon_io/android-chrome-192x192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/favicon_io/android-chrome-512x512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/favicon_io/apple-touch-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/favicon_io/favicon-16x16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/favicon_io/favicon-32x32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/favicon_io/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/favicon_io/site.webmanifest" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/material-resume.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/material-resume.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/material-resume_free_1-2-1.zip" beforeDir="false" />
-    </list>
+    <list default="true" id="3a1945e5-66e4-40c3-aaa0-21b45c3aec37" name="Changes" comment="adresse" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -80,7 +64,7 @@
       <updated>1645134089736</updated>
       <workItem from="1736527900591" duration="1617000" />
       <workItem from="1737132312878" duration="13438000" />
-      <workItem from="1737306406694" duration="861000" />
+      <workItem from="1737306406694" duration="1526000" />
     </task>
     <task id="LOCAL-00001" summary="adresse">
       <option name="closed" value="true" />

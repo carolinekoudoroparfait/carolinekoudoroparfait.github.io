@@ -1,35 +1,22 @@
-/* Menu latéral à gauche */
-.site-nav {
-    position: fixed;
-    float: left;
+.vertical-menu {
+  width: 200px; /* Set a width if you like */
 }
 
-/*.menu ul {*/
-/*    list-style-type: none;*/
-/*    padding: 0;*/
-/*}*/
+.vertical-menu a {
+  background-color: #eee; /* Grey background color */
+  color: black; /* Black text color */
+  display: block; /* Make the links appear below each other */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove underline from links */
+}
 
-/*.menu ul li {*/
-/*    padding: 15px 20px;*/
-/*    border-bottom: 1px solid #555;*/
-/*}*/
+.vertical-menu a:hover {
+  background-color: #ccc; /* Dark grey background on mouse-over */
+}
 
-/*.menu ul li a {*/
-/*    color: white;*/
-/*    text-decoration: none;*/
-/*    display: block;*/
-/*}*/
-
-/*.menu ul li:hover {*/
-/*    background-color: #555;*/
-/*}*/
-
-/* Contenu principal décalé pour éviter le chevauchement */
-.container {
-    margin-left: 270px; /* Décalage à droite pour laisser place au menu */
-    margin-top: 80px; /* Décalage pour éviter le chevauchement du header */
-    padding: 20px;
-    font-family: Arial, sans-serif;
+.vertical-menu a.active {
+  background-color: #04AA6D; /* Add a green color to the "active/current" link */
+  color: white;
 }
 
 

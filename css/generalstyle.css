@@ -1,180 +1,201 @@
-#Accueil
-{
-background: linear-gradient(#E8DAEF, #ffff);
-}
+        /*body {*/
+        /*    margin: 0;*/
+        /*    font-family: Arial, sans-serif;*/
+        /*}*/
+        header {
+            position: fixed; /* Fixe le header en haut */
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            z-index: 1000; /* S'assure qu'il reste au-dessus du contenu */
+        }
+        /*.content {*/
+        /*    margin-top: 80px; !* Pour ne pas cacher le contenu sous le header *!*/
+        /*    padding: 20px;*/
+        /*}*/
 
-#Pages
-{
-background: linear-gradient(#E8DAEF, #ffff);
-height:2000px;
-}
+/*#Accueil*/
+/*{*/
+/*background: linear-gradient(#E8DAEF, #ffff);*/
+/*}*/
 
-#retour_accueil 
-{
-	height:50px;
-	padding: 23px;
+/*#Pages*/
+/*{*/
+/*background: linear-gradient(#E8DAEF, #ffff);*/
+/*height:2000px;*/
+/*}*/
 
-}
-#retour_accueil a
-{
-	color: black;
-	font-family:sans-serif;
-	font-size:1.2em;
-	font-weight :bold;
-}
+/*#retour_accueil */
+/*{*/
+/*	height:50px;*/
+/*	padding: 23px;*/
 
-ul {
-	overflow:hidden;
-	white-space:nowrap;
-	padding:20;
-	list-style:none;
-	height:2000px;
-	font-family:sans-serif;
-}
+/*}*/
+/*#retour_accueil a*/
+/*{*/
+/*	color: black;*/
+/*	font-family:sans-serif;*/
+/*	font-size:1.2em;*/
+/*	font-weight :bold;*/
+/*}*/
 
-
-
-li {
-	overflow:hidden;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	display:inline-block;
-	vertical-align:top;
-	height:100%;
-	padding-left:15px;
-	border-bottom: 1px solid #F4ECF7;
-	border-right: 10px solid linear-gradient(#E8DAEF, #ffff);
-	color:black;
-	background-image:linear-gradient(#E8DAEF, #ffff);
-	transition:all .5s .2s ease;
-
-}
-
-
-li:hover {
-	width:80% !important;
-	transition:all .5s ease;
-}
-
-h2 {
-	font-size:1em;
-}
-h3 {
-
-	margin:0;
-	font-size: 1em;
-	opacity:0;
-	transition:opacity .4s ease;
-}
-li:hover h3 {
-	opacity:1;
-	transition:opacity .4s .3s ease;
-}
-
-p {
-	margin:10;
-	font-size:1em;
-	opacity:0;
-	transition:opacity .4s ease;
-}
-
-li:hover p {
-	opacity:1;
-	transition:opacity .4s .3s ease;
-}
+/*ul {*/
+/*	overflow:hidden;*/
+/*	white-space:nowrap;*/
+/*	padding:20;*/
+/*	list-style:none;*/
+/*	height:2000px;*/
+/*	font-family:sans-serif;*/
+/*}*/
 
 
-a {
-text-decoration: none;
-color:#2874A6 ;
-}
 
-#bio {
-	width:50px;
-}
+/*li {*/
+/*	overflow:hidden;*/
+/*	-moz-box-sizing: border-box;*/
+/*	box-sizing: border-box;*/
+/*	display:inline-block;*/
+/*	vertical-align:top;*/
+/*	height:100%;*/
+/*	padding-left:15px;*/
+/*	border-bottom: 1px solid #F4ECF7;*/
+/*	border-right: 10px solid linear-gradient(#E8DAEF, #ffff);*/
+/*	color:black;*/
+/*	background-image:linear-gradient(#E8DAEF, #ffff);*/
+/*	transition:all .5s .2s ease;*/
 
-#fac {
-	width:130px;
-}
-#fac:hover {
-	margin-left:-30px;
-}
+/*}*/
 
-.row_hide {
-  opacity:0;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
 
-li:hover .row_hide {
-	opacity:1;
-	transition:opacity .4s .3s ease;
-}
+/*li:hover {*/
+/*	width:80% !important;*/
+/*	transition:all .5s ease;*/
+/*}*/
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
+/*h2 {*/
+/*	font-size:1em;*/
+/*}*/
+/*h3 {*/
 
-.column {
-  flex: 100%;
-  max-width: 100%;
- padding: 0 4px;
- 
+/*	margin:0;*/
+/*	font-size: 1em;*/
+/*	opacity:0;*/
+/*	transition:opacity .4s ease;*/
+/*}*/
+/*li:hover h3 {*/
+/*	opacity:1;*/
+/*	transition:opacity .4s .3s ease;*/
+/*}*/
 
-}
+/*p {*/
+/*	margin:10;*/
+/*	font-size:1em;*/
+/*	opacity:0;*/
+/*	transition:opacity .4s ease;*/
+/*}*/
 
-#HumaNum {
-	width:200px;
-}
+/*li:hover p {*/
+/*	opacity:1;*/
+/*	transition:opacity .4s .3s ease;*/
+/*}*/
 
-.text{
-	opacity: 1;
-	text-align: justify;
-	margin-left: 100px;
-	margin-right: 200px;
-}
 
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: white;
-  color: black;
-  text-align: center;
-}
+/*a {*/
+/*text-decoration: none;*/
+/*color:#2874A6 ;*/
+/*}*/
 
-.row_container {
-  display: flex;
-  
-}
+/*#bio {*/
+/*	width:50px;*/
+/*}*/
 
-.container {
+/*#fac {*/
+/*	width:130px;*/
+/*}*/
+/*#fac:hover {*/
+/*	margin-left:-30px;*/
+/*}*/
 
-  position: relative;
-  max-width: 800px; /* Maximum width */
-  margin: 40px; /* 0 auto Center it */
+/*.row_hide {*/
+/*  opacity:0;*/
+/*  display: flex;*/
+/*  flex-wrap: wrap;*/
+/*  padding: 0 4px;*/
+/*}*/
 
-  
-}
+/*li:hover .row_hide {*/
+/*	opacity:1;*/
+/*	transition:opacity .4s .3s ease;*/
+/*}*/
 
-.container .content {
-  position: absolute; /* Position the background text */
-  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
-  background: rgb(0, 0, 0); /* Fallback color */
-  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-  color: #f1f1f1; /* Grey text */
-  width: 92%; /* Full width */
-  padding: 20px; /* Some padding */
-}
+/*.row {*/
+/*  display: flex;*/
+/*  flex-wrap: wrap;*/
+/*  padding: 0 4px;*/
+/*}*/
 
-.content p{
-	 color: #f1f1f1; /* Grey text */
-	 margin:10;
-	font-size:1em;
-	opacity:1;
+/*.column {*/
+/*  flex: 100%;*/
+/*  max-width: 100%;*/
+/* padding: 0 4px;*/
+/* */
 
-}
+/*}*/
+
+/*#HumaNum {*/
+/*	width:200px;*/
+/*}*/
+
+/*.text{*/
+/*	opacity: 1;*/
+/*	text-align: justify;*/
+/*	margin-left: 100px;*/
+/*	margin-right: 200px;*/
+/*}*/
+
+/*footer {*/
+/*  position: fixed;*/
+/*  left: 0;*/
+/*  bottom: 0;*/
+/*  width: 100%;*/
+/*  background-color: white;*/
+/*  color: black;*/
+/*  text-align: center;*/
+/*}*/
+
+/*.row_container {*/
+/*  display: flex;*/
+/*  */
+/*}*/
+
+/*.container {*/
+
+/*  position: relative;*/
+/*  max-width: 800px; !* Maximum width *!*/
+/*  margin: 40px; !* 0 auto Center it *!*/
+
+/*  */
+/*}*/
+
+/*.container .content {*/
+/*  position: absolute; !* Position the background text *!*/
+/*  bottom: 0; !* At the bottom. Use top:0 to append it to the top *!*/
+/*  background: rgb(0, 0, 0); !* Fallback color *!*/
+/*  background: rgba(0, 0, 0, 0.5); !* Black background with 0.5 opacity *!*/
+/*  color: #f1f1f1; !* Grey text *!*/
+/*  width: 92%; !* Full width *!*/
+/*  padding: 20px; !* Some padding *!*/
+/*}*/
+
+/*.content p{*/
+/*	 color: #f1f1f1; !* Grey text *!*/
+/*	 margin:10;*/
+/*	font-size:1em;*/
+/*	opacity:1;*/
+
+/*}*/

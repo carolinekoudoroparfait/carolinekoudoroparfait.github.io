@@ -2,23 +2,23 @@
         /*    margin: 0;*/
         /*    font-family: Arial, sans-serif;*/
         /*}*/
-        
+
 header {
     position: fixed; /* Fixe le header en haut */
     top: 0;
     left: 0;
     width: 100%;
     background-color: transparent; /* Fond transparent */
-    color: blue; /* Couleur du texte en bleu */
+    color: darkslategrey; /* Couleur du texte en bleu */
     font-weight: bold; /* Texte en gras */
     padding: 20px 0;
     text-align: center;
     z-index: 1000; /* S'assure que le header est au-dessus des autres éléments */
 }
-        /*.content {*/
-        /*    margin-top: 80px; !* Pour ne pas cacher le contenu sous le header *!*/
-        /*    padding: 20px;*/
-        /*}*/
+        .page-content {
+            margin-top: 80px; /* Pour ne pas cacher le contenu sous le header */
+            padding: 20px;
+        }
 
 /*#Accueil*/
 /*{*/

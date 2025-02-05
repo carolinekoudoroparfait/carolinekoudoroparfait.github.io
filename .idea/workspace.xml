@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a1945e5-66e4-40c3-aaa0-21b45c3aec37" name="Changes" comment="index header" />
+    <list default="true" id="3a1945e5-66e4-40c3-aaa0-21b45c3aec37" name="Changes" comment="index header">
+      <change beforePath="$PROJECT_DIR$/css/generalstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/generalstyle.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,7 +83,7 @@
       <workItem from="1737446284770" duration="263000" />
       <workItem from="1737568000058" duration="626000" />
       <workItem from="1737645704156" duration="929000" />
-      <workItem from="1738769592486" duration="3066000" />
+      <workItem from="1738769592486" duration="3827000" />
     </task>
     <task id="LOCAL-00001" summary="adresse">
       <option name="closed" value="true" />

@@ -1,7 +1,7 @@
-h1 {
-    margin-bottom: 200px; /* Ajoute 20px d'espace sous le titre */
+.titre1{ display: flex;
+    flex-direction: column;
+    gap: 20px; /* Ajoute 20px entre chaque élément enfant */
 }
-
 
 /*body {*/
         /*    margin: 0;*/

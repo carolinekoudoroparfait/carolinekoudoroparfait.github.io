@@ -316,35 +316,35 @@ Her research interests include user-centered design, with a particular focus on 
       <div class="row g-0" data-aos="fade-in" data-aos-delay="300">
         <script>
 
-          function loadTableCourses(){
-          var courses = [
-    ["L6SOPRG - Programmation Python S6", "ATER", "2025", "SU", "L3", 27, "CM", "✅"],
-    ["L6SOPRG - Programmation Python S6", "ATER", "2025", "SU", "L3", 18, "TD", "✅"],
-    ["M4LFHUNU - Humanités Numériques", "ATER", "2025", "SU", "M2", 3, "CM", "✅"],
-    ["M2SOL023 - Analyse Lexicale en TAL", "ATER", "2025", "SU", "M1", 3, "TD", "🔵"],
-    ["PIX - Programmer et résoudre des problèmes techniques", "ATER", "2025", "SU", "L2", 4.5, "CM", "🟠"],
-    ["PIX - Développer des compétences numériques", "ATER", "2025", "SU", "L2", 36, "TD", "❌"],
-    ["L5SOPRG - Programmation Python S5", "ATER", "2024", "SU", "L3", 39, "CM", "✅, 🔵, 🟠"],
-    ["L5SOPRG - Programmation Python S5", "ATER", "2024", "SU", "L3", 26, "TD", "✅, 🟠"],
-    ["PIX - Construire un environnement numérique", "ATER", "2024", "SU", "L2", 3, "CM", "🟠"],
-    ["PIX - Développer des compétences numériques", "ATER", "2024", "SU", "L2", 36, "TD", "❌"],
-    ["L6SOPRG - Programmation Python S6", "ATER", "2024", "SU", "L3", 27, "CM", "✅"],
-    ["L6SOPRG - Programmation Python S6", "ATER", "2024", "SU", "L3", 18, "TD", "✅"],
-    ["M4LFHUNU - Humanités Numériques", "ATER", "2024", "SU", "M2", 3, "CM", "✅"],
-    ["M2SOL023 - Analyse Lexicale en TAL", "ATER", "2024", "SU", "M1", 3, "TD", "🔵"],
-    ["L4SOINGE - Linguistique Informatique", "ATER", "2024", "SU", "L2", 4.5, "TD", "❌"],
-    ["PIX - Programmer et résoudre des problèmes techniques", "ATER", "2024", "SU", "L2", 4.5, "CM", "🟠"],
-    ["PIX - Développer des compétences numériques", "ATER", "2024", "SU", "L2", 36, "TD", "❌"],
-    ["L5SOPRG - Programmation Python S5", "ATER", "2023", "SU", "L3", 33, "CM", "✅, 🔵, 🟠"],
-    ["L5SOPRG - Programmation Python S5", "ATER", "2023", "SU", "L3", 22, "TD", "✅, 🟠"],
-    ["PIX - Construire un environnement numérique", "ATER", "2023", "SU", "L3", 3, "CM", "🟠"],
-    ["PIX - Développer des compétences numériques", "ATER", "2023", "SU", "L3", 36, "TD", "❌"],
-    ["Algorithmique et structuration des données", "Vacataire", "2022/2023", "INALCO", "L3", 37.5, "CM", "✅, 🔵"],
-    ["Programmation Python", "Vacataire", "2022/2023", "INALCO", "L3", 50, "TD", "✅"],
-    ["Algorithmique et structuration des données", "Vacataire", "2021/2022", "INALCO", "L3", 37.5, "CM", "✅, 🔵"],
-    ["Programmation Python", "Vacataire", "2021/2022", "INALCO", "L3", 50, "TD", "✅"],
-    ["Total", "", "", "", "", 560.5, "", ""]
-];
+//           function loadTableCourses(){
+//           var courses = [
+//     ["L6SOPRG - Programmation Python S6", "ATER", "2025", "SU", "L3", 27, "CM", "✅"],
+//     ["L6SOPRG - Programmation Python S6", "ATER", "2025", "SU", "L3", 18, "TD", "✅"],
+//     ["M4LFHUNU - Humanités Numériques", "ATER", "2025", "SU", "M2", 3, "CM", "✅"],
+//     ["M2SOL023 - Analyse Lexicale en TAL", "ATER", "2025", "SU", "M1", 3, "TD", "🔵"],
+//     ["PIX - Programmer et résoudre des problèmes techniques", "ATER", "2025", "SU", "L2", 4.5, "CM", "🟠"],
+//     ["PIX - Développer des compétences numériques", "ATER", "2025", "SU", "L2", 36, "TD", "❌"],
+//     ["L5SOPRG - Programmation Python S5", "ATER", "2024", "SU", "L3", 39, "CM", "✅, 🔵, 🟠"],
+//     ["L5SOPRG - Programmation Python S5", "ATER", "2024", "SU", "L3", 26, "TD", "✅, 🟠"],
+//     ["PIX - Construire un environnement numérique", "ATER", "2024", "SU", "L2", 3, "CM", "🟠"],
+//     ["PIX - Développer des compétences numériques", "ATER", "2024", "SU", "L2", 36, "TD", "❌"],
+//     ["L6SOPRG - Programmation Python S6", "ATER", "2024", "SU", "L3", 27, "CM", "✅"],
+//     ["L6SOPRG - Programmation Python S6", "ATER", "2024", "SU", "L3", 18, "TD", "✅"],
+//     ["M4LFHUNU - Humanités Numériques", "ATER", "2024", "SU", "M2", 3, "CM", "✅"],
+//     ["M2SOL023 - Analyse Lexicale en TAL", "ATER", "2024", "SU", "M1", 3, "TD", "🔵"],
+//     ["L4SOINGE - Linguistique Informatique", "ATER", "2024", "SU", "L2", 4.5, "TD", "❌"],
+//     ["PIX - Programmer et résoudre des problèmes techniques", "ATER", "2024", "SU", "L2", 4.5, "CM", "🟠"],
+//     ["PIX - Développer des compétences numériques", "ATER", "2024", "SU", "L2", 36, "TD", "❌"],
+//     ["L5SOPRG - Programmation Python S5", "ATER", "2023", "SU", "L3", 33, "CM", "✅, 🔵, 🟠"],
+//     ["L5SOPRG - Programmation Python S5", "ATER", "2023", "SU", "L3", 22, "TD", "✅, 🟠"],
+//     ["PIX - Construire un environnement numérique", "ATER", "2023", "SU", "L3", 3, "CM", "🟠"],
+//     ["PIX - Développer des compétences numériques", "ATER", "2023", "SU", "L3", 36, "TD", "❌"],
+//     ["Algorithmique et structuration des données", "Vacataire", "2022/2023", "INALCO", "L3", 37.5, "CM", "✅, 🔵"],
+//     ["Programmation Python", "Vacataire", "2022/2023", "INALCO", "L3", 50, "TD", "✅"],
+//     ["Algorithmique et structuration des données", "Vacataire", "2021/2022", "INALCO", "L3", 37.5, "CM", "✅, 🔵"],
+//     ["Programmation Python", "Vacataire", "2021/2022", "INALCO", "L3", 50, "TD", "✅"],
+//     ["Total", "", "", "", "", 560.5, "", ""]
+// ];
 
            // var courses = [
            //  ["Projet Tutoré" , "30h","L3" ,"TP " , 2017 ],

@@ -473,127 +473,220 @@ Her research interests include user-centered design, with a particular focus on 
       <h2 class="h2 fw-light mb-4">Teaching experiences</h2>
 
       <div class="row g-0" data-aos="fade-in" data-aos-delay="300">
-        <script>
+        <table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+  <thead>
+    <tr>
+      <th>Nom de la matière</th>
+      <th>Années</th>
+      <th>Niveau</th>
+      <th colspan="2">heTDs</th>
+      <th>Supports</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>CM</th>
+      <th>TD</th>
+      <th></th>
+    </tr>
+  </thead>
 
-          function loadTableCourses(){
-          var courses = [
-    ["L6SOPRG - Programmation Python S6", "ATER", "2025", "SU", "L3", 27, "CM", "✅"],
-    ["L6SOPRG - Programmation Python S6", "ATER", "2025", "SU", "L3", 18, "TD", "✅"],
-    ["M4LFHUNU - Humanités Numériques", "ATER", "2025", "SU", "M2", 3, "CM", "✅"],
-    ["M2SOL023 - Analyse Lexicale en TAL", "ATER", "2025", "SU", "M1", 3, "TD", "🔵"],
-    ["PIX - Programmer et résoudre des problèmes techniques", "ATER", "2025", "SU", "L2", 4.5, "CM", "🟠"],
-    ["PIX - Développer des compétences numériques", "ATER", "2025", "SU", "L2", 36, "TD", "❌"],
-    ["L5SOPRG - Programmation Python S5", "ATER", "2024", "SU", "L3", 39, "CM", "✅, 🔵, 🟠"],
-    ["L5SOPRG - Programmation Python S5", "ATER", "2024", "SU", "L3", 26, "TD", "✅, 🟠"],
-    ["PIX - Construire un environnement numérique", "ATER", "2024", "SU", "L2", 3, "CM", "🟠"],
-    ["PIX - Développer des compétences numériques", "ATER", "2024", "SU", "L2", 36, "TD", "❌"],
-    ["L6SOPRG - Programmation Python S6", "ATER", "2024", "SU", "L3", 27, "CM", "✅"],
-    ["L6SOPRG - Programmation Python S6", "ATER", "2024", "SU", "L3", 18, "TD", "✅"],
-    ["M4LFHUNU - Humanités Numériques", "ATER", "2024", "SU", "M2", 3, "CM", "✅"],
-    ["M2SOL023 - Analyse Lexicale en TAL", "ATER", "2024", "SU", "M1", 3, "TD", "🔵"],
-    ["L4SOINGE - Linguistique Informatique", "ATER", "2024", "SU", "L2", 4.5, "TD", "❌"],
-    ["PIX - Programmer et résoudre des problèmes techniques", "ATER", "2024", "SU", "L2", 4.5, "CM", "🟠"],
-    ["PIX - Développer des compétences numériques", "ATER", "2024", "SU", "L2", 36, "TD", "❌"],
-    ["L5SOPRG - Programmation Python S5", "ATER", "2023", "SU", "L3", 33, "CM", "✅, 🔵, 🟠"],
-    ["L5SOPRG - Programmation Python S5", "ATER", "2023", "SU", "L3", 22, "TD", "✅, 🟠"],
-    ["PIX - Construire un environnement numérique", "ATER", "2023", "SU", "L3", 3, "CM", "🟠"],
-    ["PIX - Développer des compétences numériques", "ATER", "2023", "SU", "L3", 36, "TD", "❌"],
-    ["Algorithmique et structuration des données", "Vacataire", "2022/2023", "INALCO", "L3", 37.5, "CM", "✅, 🔵"],
-    ["Programmation Python", "Vacataire", "2022/2023", "INALCO", "L3", 50, "TD", "✅"],
-    ["Algorithmique et structuration des données", "Vacataire", "2021/2022", "INALCO", "L3", 37.5, "CM", "✅, 🔵"],
-    ["Programmation Python", "Vacataire", "2021/2022", "INALCO", "L3", 50, "TD", "✅"],
-    ["Total", "", "", "", "", 560.5, "", ""]
-];
+  <tbody>
+    <tr>
+      <td><strong>Total = 380 heTDs</strong></td>
+      <td></td>
+      <td></td>
+      <td><strong>141</strong></td>
+      <td><strong>239</strong></td>
+      <td></td>
+    </tr>
 
-           // var courses = [
-           //  ["Projet Tutoré" , "30h","L3" ,"TP " , 2017 ],
-           //  ["Programmation Orientée Objet (C++) " , "30h" ,"L1" ,"TD/TP " ,2020 ],
-           //  ["Modélisation des Processus" , "180h" ,"L2", "TD/TP " ,2017 ],
-           //  ["Metodologie de la Recherche" , "45h" ,"L3" ,"TD/TP " ,2017 ],
-           //  ["Programmation Orientée Objet (C\#)" , "90h" ,"L1"  ,"TD/TP " ,2018 ],
-           //  ["Base de Données pour Logiciels" , "75h" ,"L3" ,"TD/TP " ,2018 ],
-           //  ["Developpement d'Applications Web (PHP/HTML)" , "90h" ,"L1" ,"TD/TP " ,2018 ],
-           //  ["Developpement d'Applications (Java)" , "90h" ,"L1" ,"TD/TP " ,2018 ],
-           //  ["Metodologie de la Recherche" , "45h" ,"L3" ,"TD/TP " ,2018 ],
-           //  ["Programmation Orientée Objet (C++) ","30h   ","  L1   ","  TD/TP",2019  ],
-           //  ["Bases de Programmation (Python) ","54h   ","  L1   ","  TD/TP",2020  ],
-           //  ["Bases de Programmation (C++) ","54h   ","  L1   ","  TD/TP",2021  ],
-           //  ["Architecture Web et base de données ","24h   ","  L2   ","  TP",2021  ],
-           //  ["Génie Logiciel  ","27h   ","  L3   ","  TP",2021  ],
-           //  ["Projet - Urbanisation  ","18h   ","  M1   ","  TP",2021  ],
-           //  ["Programmation Parallèle (C++)","21h   ","  M1   ","  TP",2021  ],
-           //  ["Application d'innovation ","21h   ","  M2   ","  TD/TP",2021  ],
-           //  ["Analyse en ligne (OLAP) et visualisation de données","12h   ","  M1   ","  TD",2022  ],
-           //  ["Apprentisage Incremental ","12h   ","  M2   ","  TD",2022  ],
-           //  ["Supervision de projet","5h   ","  M1   ","  TDI",2021  ],
-           //  ["Bases de Programmation (C++) ","54h   ","  L1   ","  TD/TP",2022  ],
-           //  ["Développement Web : conception internet  ","12h   ","  L1   ","  TP",2022  ],
-           //  ["Génie Logiciel  ","27h   ","  L3   ","  TP",2022  ],
-           //  ["Modelisation Objet et UML","15h   ","  L3   ","  TP",2022  ],
-           //  ["Application d'innovation ","21h   ","  M2   ","  TD/TP",2022  ],
-           //  ["Analyse en ligne (OLAP) et visualisation de données ","12h   ","  M1   ","  TD",2023  ],
-           //  ["Projet de Programmation  ","18h   ","  L1   ","  TP",2023  ],
-           //  ["Architecture Web et base de données ","24h   ","  L2   ","  TP",2023  ],
-           //  ["Recherche d'information et site Web","56h   ","  L3   ","  TD",2023  ],
-           //  ["Cours PIX  ","42h   ","  L1   ","  TP",2023  ],
-           //  ["Cours PIX  ","3h   ","  L1   ","  CM",2023  ],
-           //  ["Mathematiques  ","21h   ","  L3   ","  TP",2023  ],
-           //  ["Cours PIX 2  ","42h   ","  L1   ","  TP",2024  ],
-           //  ["Statistique  ","13.5h","  L3   ","  TP",2024  ],
-           //  ["Algorithmes et structures","25h   ","  L3  ","  TP",2024  ],
-           //  ["Total d'heures"," 1602h   ","     ","  ",""      ] ,
-           // ];
-            courses.sort(sortFunction);
+    <tr>
+      <td><strong>Programmation Python S5, S6</strong></td>
+      <td>23/25</td>
+      <td>L3</td>
+      <td><strong>126</strong></td>
+      <td><strong>84</strong></td>
+      <td>
+        <ul style="margin: 0; padding-left: 18px;">
+          <li>Supports personnels :
+            <a href="https://github.com/These-SCAI2023/L5SOPRG_2023-2024">
+              https://github.com/These-SCAI2023/L5SOPRG_2023-2024
+            </a>
+          </li>
+          <li>Supports personnels :
+            <a href="https://github.com/These-SCAI2023/L6SOPROG/tree/main/PDF_CKP">
+              https://github.com/These-SCAI2023/L6SOPROG/tree/main/PDF_CKP
+            </a>
+          </li>
+        </ul>
+      </td>
+    </tr>
 
-            function sortFunction(a, b) {
-                if (a[4] === b[4]) {
-                    return 0;
-                }
-                else {
-                    return (a[4] > b[4]) ? -1 : 1;
-                }
-            }
+    <tr>
+      <td>Humanités Numériques</td>
+      <td>23/24</td>
+      <td>M2</td>
+      <td>3</td>
+      <td>--</td>
+      <td>
+        Supports personnels :
+        <a href="https://github.com/These-SCAI2023/M4LFHUNU">
+          https://github.com/These-SCAI2023/M4LFHUNU
+        </a>
+      </td>
+    </tr>
 
-            var tbl = document.getElementById("table");
-            var tbody= document.createElement("tbody");
-            tbl.appendChild(tbody);
-            courses.forEach(course => {
-              const r = document.createElement("tr");
-              r.setAttribute("class","row100");
-              tbody.appendChild(r);
-              course.forEach(data => {
-                var c = document.createElement("td");
-                c.setAttribute("class","column100 column1");
-                c.setAttribute("data-column","column1");
-                var text = document.createTextNode(data);
-                c.appendChild(text);
-                r.appendChild(c);
-              });
-            });
+    <tr>
+      <td>Analyse Lexicale en TAL</td>
+      <td>23/25</td>
+      <td>M1</td>
+      <td>1,5</td>
+      <td>4,5</td>
+      <td>Supports hérités</td>
+    </tr>
 
-          }
-        </script>
+    <tr>
+      <td>Linguistique Informatique</td>
+      <td>23/25</td>
+      <td>L2</td>
+      <td>--</td>
+      <td>6,5</td>
+      <td>Supports hérités</td>
+    </tr>
 
-        <div class="wrap-table100">
-          <div class="table100 ver1 m-b-110", id="table100">
-            <table id="table" data-vertable="ver1">
-              <thead>
-                <tr class="row100 head">
-<!--                   ["Nom de la matière", "Statut", "Années", "Étab.", "Niveau", "heTDs", "Nature", "Resp."],-->
-                  <th class="column100 column1" data-column="column1"><strong>Course</strong> </th>
-                  <th class="column100 column1" data-column="column1"><strong> State</strong></th>
-                  <th class="column100 column1" data-column="column1"><strong> Year</strong></th>
-                  <th class="column100 column1" data-column="column1"><strong> Univ.</strong></th>
-                  <th class="column100 column1" data-column="column1"><strong>Level</strong></th>
-                  <th class="column100 column1" data-column="column1"><strong> heTDs</strong></th>
-                  <th class="column100 column1" data-column="column1"><strong> Type</strong></th>
-                  <th class="column100 column1" data-column="column1"><strong> Resp.</strong></th>
+    <tr>
+      <td>PIX - Programmer et résoudre des problèmes informatiques</td>
+      <td>23/25</td>
+      <td>L2</td>
+      <td>10,5</td>
+      <td>144</td>
+      <td>Supports hérités</td>
+    </tr>
+  </tbody>
+</table>
+<!--        <script>-->
 
-                </tr>
-              </thead>
-            </table>
-          </div>
-        </div>
+<!--          function loadTableCourses(){-->
+<!--          var courses = [-->
+<!--    ["L6SOPRG - Programmation Python S6", "ATER", "2025", "SU", "L3", 27, "CM", "✅"],-->
+<!--    ["L6SOPRG - Programmation Python S6", "ATER", "2025", "SU", "L3", 18, "TD", "✅"],-->
+<!--    ["M4LFHUNU - Humanités Numériques", "ATER", "2025", "SU", "M2", 3, "CM", "✅"],-->
+<!--    ["M2SOL023 - Analyse Lexicale en TAL", "ATER", "2025", "SU", "M1", 3, "TD", "🔵"],-->
+<!--    ["PIX - Programmer et résoudre des problèmes techniques", "ATER", "2025", "SU", "L2", 4.5, "CM", "🟠"],-->
+<!--    ["PIX - Développer des compétences numériques", "ATER", "2025", "SU", "L2", 36, "TD", "❌"],-->
+<!--    ["L5SOPRG - Programmation Python S5", "ATER", "2024", "SU", "L3", 39, "CM", "✅, 🔵, 🟠"],-->
+<!--    ["L5SOPRG - Programmation Python S5", "ATER", "2024", "SU", "L3", 26, "TD", "✅, 🟠"],-->
+<!--    ["PIX - Construire un environnement numérique", "ATER", "2024", "SU", "L2", 3, "CM", "🟠"],-->
+<!--    ["PIX - Développer des compétences numériques", "ATER", "2024", "SU", "L2", 36, "TD", "❌"],-->
+<!--    ["L6SOPRG - Programmation Python S6", "ATER", "2024", "SU", "L3", 27, "CM", "✅"],-->
+<!--    ["L6SOPRG - Programmation Python S6", "ATER", "2024", "SU", "L3", 18, "TD", "✅"],-->
+<!--    ["M4LFHUNU - Humanités Numériques", "ATER", "2024", "SU", "M2", 3, "CM", "✅"],-->
+<!--    ["M2SOL023 - Analyse Lexicale en TAL", "ATER", "2024", "SU", "M1", 3, "TD", "🔵"],-->
+<!--    ["L4SOINGE - Linguistique Informatique", "ATER", "2024", "SU", "L2", 4.5, "TD", "❌"],-->
+<!--    ["PIX - Programmer et résoudre des problèmes techniques", "ATER", "2024", "SU", "L2", 4.5, "CM", "🟠"],-->
+<!--    ["PIX - Développer des compétences numériques", "ATER", "2024", "SU", "L2", 36, "TD", "❌"],-->
+<!--    ["L5SOPRG - Programmation Python S5", "ATER", "2023", "SU", "L3", 33, "CM", "✅, 🔵, 🟠"],-->
+<!--    ["L5SOPRG - Programmation Python S5", "ATER", "2023", "SU", "L3", 22, "TD", "✅, 🟠"],-->
+<!--    ["PIX - Construire un environnement numérique", "ATER", "2023", "SU", "L3", 3, "CM", "🟠"],-->
+<!--    ["PIX - Développer des compétences numériques", "ATER", "2023", "SU", "L3", 36, "TD", "❌"],-->
+<!--    ["Algorithmique et structuration des données", "Vacataire", "2022/2023", "INALCO", "L3", 37.5, "CM", "✅, 🔵"],-->
+<!--    ["Programmation Python", "Vacataire", "2022/2023", "INALCO", "L3", 50, "TD", "✅"],-->
+<!--    ["Algorithmique et structuration des données", "Vacataire", "2021/2022", "INALCO", "L3", 37.5, "CM", "✅, 🔵"],-->
+<!--    ["Programmation Python", "Vacataire", "2021/2022", "INALCO", "L3", 50, "TD", "✅"],-->
+<!--    ["Total", "", "", "", "", 560.5, "", ""]-->
+<!--];-->
+
+<!--           // var courses = [-->
+<!--           //  ["Projet Tutoré" , "30h","L3" ,"TP " , 2017 ],-->
+<!--           //  ["Programmation Orientée Objet (C++) " , "30h" ,"L1" ,"TD/TP " ,2020 ],-->
+<!--           //  ["Modélisation des Processus" , "180h" ,"L2", "TD/TP " ,2017 ],-->
+<!--           //  ["Metodologie de la Recherche" , "45h" ,"L3" ,"TD/TP " ,2017 ],-->
+<!--           //  ["Programmation Orientée Objet (C\#)" , "90h" ,"L1"  ,"TD/TP " ,2018 ],-->
+<!--           //  ["Base de Données pour Logiciels" , "75h" ,"L3" ,"TD/TP " ,2018 ],-->
+<!--           //  ["Developpement d'Applications Web (PHP/HTML)" , "90h" ,"L1" ,"TD/TP " ,2018 ],-->
+<!--           //  ["Developpement d'Applications (Java)" , "90h" ,"L1" ,"TD/TP " ,2018 ],-->
+<!--           //  ["Metodologie de la Recherche" , "45h" ,"L3" ,"TD/TP " ,2018 ],-->
+<!--           //  ["Programmation Orientée Objet (C++) ","30h   ","  L1   ","  TD/TP",2019  ],-->
+<!--           //  ["Bases de Programmation (Python) ","54h   ","  L1   ","  TD/TP",2020  ],-->
+<!--           //  ["Bases de Programmation (C++) ","54h   ","  L1   ","  TD/TP",2021  ],-->
+<!--           //  ["Architecture Web et base de données ","24h   ","  L2   ","  TP",2021  ],-->
+<!--           //  ["Génie Logiciel  ","27h   ","  L3   ","  TP",2021  ],-->
+<!--           //  ["Projet - Urbanisation  ","18h   ","  M1   ","  TP",2021  ],-->
+<!--           //  ["Programmation Parallèle (C++)","21h   ","  M1   ","  TP",2021  ],-->
+<!--           //  ["Application d'innovation ","21h   ","  M2   ","  TD/TP",2021  ],-->
+<!--           //  ["Analyse en ligne (OLAP) et visualisation de données","12h   ","  M1   ","  TD",2022  ],-->
+<!--           //  ["Apprentisage Incremental ","12h   ","  M2   ","  TD",2022  ],-->
+<!--           //  ["Supervision de projet","5h   ","  M1   ","  TDI",2021  ],-->
+<!--           //  ["Bases de Programmation (C++) ","54h   ","  L1   ","  TD/TP",2022  ],-->
+<!--           //  ["Développement Web : conception internet  ","12h   ","  L1   ","  TP",2022  ],-->
+<!--           //  ["Génie Logiciel  ","27h   ","  L3   ","  TP",2022  ],-->
+<!--           //  ["Modelisation Objet et UML","15h   ","  L3   ","  TP",2022  ],-->
+<!--           //  ["Application d'innovation ","21h   ","  M2   ","  TD/TP",2022  ],-->
+<!--           //  ["Analyse en ligne (OLAP) et visualisation de données ","12h   ","  M1   ","  TD",2023  ],-->
+<!--           //  ["Projet de Programmation  ","18h   ","  L1   ","  TP",2023  ],-->
+<!--           //  ["Architecture Web et base de données ","24h   ","  L2   ","  TP",2023  ],-->
+<!--           //  ["Recherche d'information et site Web","56h   ","  L3   ","  TD",2023  ],-->
+<!--           //  ["Cours PIX  ","42h   ","  L1   ","  TP",2023  ],-->
+<!--           //  ["Cours PIX  ","3h   ","  L1   ","  CM",2023  ],-->
+<!--           //  ["Mathematiques  ","21h   ","  L3   ","  TP",2023  ],-->
+<!--           //  ["Cours PIX 2  ","42h   ","  L1   ","  TP",2024  ],-->
+<!--           //  ["Statistique  ","13.5h","  L3   ","  TP",2024  ],-->
+<!--           //  ["Algorithmes et structures","25h   ","  L3  ","  TP",2024  ],-->
+<!--           //  ["Total d'heures"," 1602h   ","     ","  ",""      ] ,-->
+<!--           // ];-->
+<!--            courses.sort(sortFunction);-->
+
+<!--            function sortFunction(a, b) {-->
+<!--                if (a[4] === b[4]) {-->
+<!--                    return 0;-->
+<!--                }-->
+<!--                else {-->
+<!--                    return (a[4] > b[4]) ? -1 : 1;-->
+<!--                }-->
+<!--            }-->
+
+<!--            var tbl = document.getElementById("table");-->
+<!--            var tbody= document.createElement("tbody");-->
+<!--            tbl.appendChild(tbody);-->
+<!--            courses.forEach(course => {-->
+<!--              const r = document.createElement("tr");-->
+<!--              r.setAttribute("class","row100");-->
+<!--              tbody.appendChild(r);-->
+<!--              course.forEach(data => {-->
+<!--                var c = document.createElement("td");-->
+<!--                c.setAttribute("class","column100 column1");-->
+<!--                c.setAttribute("data-column","column1");-->
+<!--                var text = document.createTextNode(data);-->
+<!--                c.appendChild(text);-->
+<!--                r.appendChild(c);-->
+<!--              });-->
+<!--            });-->
+
+<!--          }-->
+<!--        </script>-->
+
+<!--        <div class="wrap-table100">-->
+<!--          <div class="table100 ver1 m-b-110", id="table100">-->
+<!--            <table id="table" data-vertable="ver1">-->
+<!--              <thead>-->
+<!--                <tr class="row100 head">-->
+<!--&lt;!&ndash;                   ["Nom de la matière", "Statut", "Années", "Étab.", "Niveau", "heTDs", "Nature", "Resp."],&ndash;&gt;-->
+<!--                  <th class="column100 column1" data-column="column1"><strong>Course</strong> </th>-->
+<!--                  <th class="column100 column1" data-column="column1"><strong> State</strong></th>-->
+<!--                  <th class="column100 column1" data-column="column1"><strong> Year</strong></th>-->
+<!--                  <th class="column100 column1" data-column="column1"><strong> Univ.</strong></th>-->
+<!--                  <th class="column100 column1" data-column="column1"><strong>Level</strong></th>-->
+<!--                  <th class="column100 column1" data-column="column1"><strong> heTDs</strong></th>-->
+<!--                  <th class="column100 column1" data-column="column1"><strong> Type</strong></th>-->
+<!--                  <th class="column100 column1" data-column="column1"><strong> Resp.</strong></th>-->
+
+<!--                </tr>-->
+<!--              </thead>-->
+<!--            </table>-->
+<!--          </div>-->
+<!--        </div>-->
       </div>
     </div>
   </div>

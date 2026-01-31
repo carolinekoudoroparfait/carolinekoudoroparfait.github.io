@@ -140,3 +140,26 @@ footer a:not(.nav-link) {
   .page-break {
     padding-top: 5rem;
     page-break-before: always; } }
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-family: serif;
+  font-size: 0.95em;
+}
+
+th {
+  text-align: center;
+  font-weight: bold;
+}
+
+th, td {
+  border: 1px solid #000;
+  padding: 6px 8px;
+  vertical-align: top;
+}
+
+.double-line td,
+.double-line th {
+  border-top: 2px solid black;
+}

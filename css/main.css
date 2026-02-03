@@ -200,7 +200,7 @@ footer a:not(.nav-link) {
     left: 10px; /* Positionne le libellé à gauche */
     top: 0.5em; /* Aligne verticalement le libellé */
     font-weight: bold;
-    width: 120px; /* Largeur fixe pour le libellé */
+    width: 100px; /* Largeur fixe pour le libellé */
     text-align: left;
     padding-right: 10px; /* Espacement après le libellé */
     white-space: nowrap; /* Empêche le retour à la ligne du libellé */

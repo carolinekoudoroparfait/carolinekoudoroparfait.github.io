@@ -168,33 +168,40 @@ footer a:not(.nav-link) {
 
 
     /* CSS pour le responsive (à ajouter dans votre feuille de style) */
-    @media (max-width: 768px) {
-      table, thead, tbody, th, td, tr {
-        display: block;
-      }
+   @media (max-width: 768px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
 
-      thead {
-        display: none;
-      }
+  thead {
+    display: none; /* Cache les en-têtes sur mobile */
+  }
 
-      tr {
-        margin-bottom: 1em;
-        border: 1px solid #000;
-      }
+  tr {
+    margin-bottom: 1.5em; /* Espacement entre les lignes */
+    border: 1px solid #ddd;
+    padding: 0.5em; /* Espacement interne pour la ligne */
+  }
 
-      td {
-        border: none;
-        position: relative;
-        padding-left: 50%;
-      }
+  td {
+    border: none;
+    position: relative;
+    padding-left: 0; /* Réinitialise le padding */
+    padding-top: 0.7em; /* Espacement vertical pour éviter le chevauchement */
+    padding-bottom: 0.5em;
+    text-align: left;
+  }
 
-      td::before {
-        content: attr(data-label);
-        position: absolute;
-        left: 10px;
-        font-weight: bold;
-      }
-    }
+  td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0; /* Aligne le libellé à gauche */
+    top: 0; /* Positionne le libellé en haut */
+    font-weight: bold;
+    width: 120px; /* Largeur fixe pour les libellés (ajustable) */
+    padding-right: 10px; /* Espacement après le libellé */
+  }
+}
 
 .double-line td,
 .double-line th {

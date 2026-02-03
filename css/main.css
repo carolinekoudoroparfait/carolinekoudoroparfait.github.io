@@ -200,6 +200,7 @@ footer a:not(.nav-link) {
     left: 10px; /* Positionne le libellé à gauche */
     top: 0.5em; /* Aligne verticalement le libellé */
     font-weight: bold;
+    width: 10px; /* Largeur fixe pour le libellé */
     text-align: left;
     padding-right: 10px; /* Espacement après le libellé */
     white-space: nowrap; /* Empêche le retour à la ligne du libellé */
@@ -214,8 +215,4 @@ footer a:not(.nav-link) {
 .job-title {
   margin-bottom: 4rem; /* espace sous le h3 */
   margin-top: 4rem;    /* espace au-dessus */
-}
-
-.responsive-table td::before {
-  width: 50px !important; /* Force l'application de cette règle */
 }

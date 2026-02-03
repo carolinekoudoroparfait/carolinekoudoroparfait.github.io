@@ -145,13 +145,27 @@ footer a:not(.nav-link) {
       width: 100%;
       border-collapse: collapse;
       margin: 20px 0;
+   font-family: serif;
+  font-size: 0.95em;
     }
 
     th, td {
       padding: 8px;
+      vertical-align: top;
       text-align: left;
       border-bottom: 1px solid #ddd;
     }
+
+/*    th, td {*/
+/*  border: 1px solid #000;*/
+/*  padding: 6px 8px;*/
+/*}    */
+    th {
+  text-align: center;
+  font-weight: bold;
+}
+
+
 
     /* CSS pour le responsive (à ajouter dans votre feuille de style) */
     @media (max-width: 768px) {
@@ -180,25 +194,6 @@ footer a:not(.nav-link) {
         left: 10px;
         font-weight: bold;
       }
-
-
-/*table {*/
-/*  border-collapse: collapse;*/
-/*  width: 100%;*/
-/*  font-family: serif;*/
-/*  font-size: 0.95em;*/
-/*}*/
-
-/*th {*/
-/*  text-align: center;*/
-/*  font-weight: bold;*/
-/*}*/
-
-/*th, td {*/
-/*  border: 1px solid #000;*/
-/*  padding: 6px 8px;*/
-/*  vertical-align: top;*/
-/*}*/
 
 .double-line td,
 .double-line th {

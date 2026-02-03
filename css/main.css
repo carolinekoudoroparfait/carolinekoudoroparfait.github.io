@@ -163,3 +163,8 @@ th, td {
 .double-line th {
   border-top: 2px solid black;
 }
+
+.job-title {
+  margin-bottom: 2rem; /* espace sous le h3 */
+  margin-top: 2rem;    /* espace au-dessus */
+}

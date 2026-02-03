@@ -165,6 +165,6 @@ th, td {
 }
 
 .job-title {
-  margin-bottom: 2rem; /* espace sous le h3 */
-  margin-top: 2rem;    /* espace au-dessus */
+  margin-bottom: 4rem; /* espace sous le h3 */
+  margin-top: 4rem;    /* espace au-dessus */
 }

@@ -206,12 +206,6 @@ footer a:not(.nav-link) {
     white-space: nowrap; /* Empêche le retour à la ligne du libellé */
   }
 }
-
-.double-line td,
-.double-line th {
-  border-top: 2px solid black;
-}
-
 .job-title {
   margin-bottom: 4rem; /* espace sous le h3 */
   margin-top: 4rem;    /* espace au-dessus */

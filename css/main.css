@@ -171,6 +171,7 @@ footer a:not(.nav-link) {
    @media (max-width: 768px) {
   table, thead, tbody, th, td, tr {
     display: block;
+    width: 100%; /* Assure que chaque élément prend toute la largeur */
   }
 
   thead {
@@ -178,28 +179,31 @@ footer a:not(.nav-link) {
   }
 
   tr {
-    margin-bottom: 1.5em; /* Espacement entre les lignes */
+    margin-bottom: 1.5em;
     border: 1px solid #ddd;
-    padding: 0.5em; /* Espacement interne pour la ligne */
+    padding: 0.5em;
+    display: block; /* Chaque ligne devient un bloc */
   }
 
   td {
     border: none;
     position: relative;
-    padding-left: 0; /* Réinitialise le padding */
-    padding-top: 0.7em; /* Espacement vertical pour éviter le chevauchement */
-    padding-bottom: 0.5em;
+    padding: 0.5em 0 0.5em 130px; /* Espacement à gauche pour le libellé */
     text-align: left;
+    min-height: 1.5em; /* Hauteur minimale pour éviter le chevauchement */
+    display: block; /* Chaque cellule devient un bloc */
   }
 
   td::before {
     content: attr(data-label);
     position: absolute;
-    left: 0; /* Aligne le libellé à gauche */
-    top: 0; /* Positionne le libellé en haut */
+    left: 10px; /* Positionne le libellé à gauche */
+    top: 0.5em; /* Aligne verticalement le libellé */
     font-weight: bold;
-    width: 120px; /* Largeur fixe pour les libellés (ajustable) */
+    width: 120px; /* Largeur fixe pour le libellé */
+    text-align: left;
     padding-right: 10px; /* Espacement après le libellé */
+    white-space: nowrap; /* Empêche le retour à la ligne du libellé */
   }
 }
 
